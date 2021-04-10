@@ -1,5 +1,6 @@
 class VideosController < ApplicationController
+    before_action :authenticate_user!
     def index
-    @video="ここはルートです"
+        @video="ここはルートです"
     end
 end
